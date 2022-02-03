@@ -37,35 +37,35 @@ Vasp :
 
 ### Si2C2
 
-![Si2C2]()
+![Si2C2](https://github.com/UncleThree0402/vasp_hpc_adjustment_acceleration_experiments/blob/master/image/Si2_C2_POSCAR.png)
 
 #### Band
 
-![Si2C2Band]()
+![Si2C2Band](https://github.com/UncleThree0402/vasp_hpc_adjustment_acceleration_experiments/blob/master/image/Si2C2_band.png)
 
 #### PDOS
 
-![Si2C2PDOS]()
+![Si2C2PDOS](https://github.com/UncleThree0402/vasp_hpc_adjustment_acceleration_experiments/blob/master/image/Si2_C2_dos.png)
 
 #### TDOS
 
-![Si2C2TDOS]()
+![Si2C2TDOS](https://github.com/UncleThree0402/vasp_hpc_adjustment_acceleration_experiments/blob/master/image/Si2_C2_total_dos.png)
 
 ### Si84C84
 
-![Si84C84]()
+![Si84C84](https://github.com/UncleThree0402/vasp_hpc_adjustment_acceleration_experiments/blob/master/image/Si84_C84_POSCAR.png)
 
 #### Band
 
-![Si84C84Band]()
+![Si84C84Band](https://github.com/UncleThree0402/vasp_hpc_adjustment_acceleration_experiments/blob/master/image/Si84_C84_band.png)
 
 #### PDOS
 
-![Si84C84PDOS]()
+![Si84C84PDOS](https://github.com/UncleThree0402/vasp_hpc_adjustment_acceleration_experiments/blob/master/image/Si84_C84_dos.png)
 
 #### TDOS
 
-![Si84C84TDOS]()
+![Si84C84TDOS](https://github.com/UncleThree0402/vasp_hpc_adjustment_acceleration_experiments/blob/master/image/Si84_C84_total_dos.png)
 
 ## Experiment
 
@@ -108,5 +108,5 @@ Vasp :
 | 4    | ERR           | 1350.09    | ERR            | 0.38        |
 | 5    | ERR           | 1198.046   | ERR            | 0.33        |
 
-![8484gpuvshour_re]()
-![8484gpuvshour_ra]()
+![8484ndvshour_re]()
+![8484ndvshour_ra]()
