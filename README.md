@@ -81,8 +81,8 @@ Vasp :
 | 7    | 8352.686      | 3588.17    | 2.32           | 1.00        |
 | 8    | 11988.298     | 3193.604   | 3.33           | 0.89        |
 
-![22gpuvshour_re]()
-![22gpuvshour_ra]()
+![22gpuvshour_re](https://github.com/UncleThree0402/vasp_hpc_adjustment_acceleration_experiments/blob/master/image/22gpuvshour_re.png)
+![22gpuvshour_ra](https://github.com/UncleThree0402/vasp_hpc_adjustment_acceleration_experiments/blob/master/image/22gpuvshour_ra.png)
 
 ### Si84C84 -SingleNode (GPU)
 | GPUs | No Adjust (s) | Adjust (s) | No Adjust (hr) | Adjust (hr) | 
@@ -96,8 +96,8 @@ Vasp :
 | 7    | 23615.568     | 12084.942  | 6.56           | 3.36        |
 | 8    | 24382.533     | 10878.126  | 6.77           | 3.02        |
 
-![8484gpuvshour_re]()
-![8484gpuvshour_ra]()
+![8484gpuvshour_re](https://github.com/UncleThree0402/vasp_hpc_adjustment_acceleration_experiments/blob/master/image/8484gpuvshour_re.png)
+![8484gpuvshour_ra](https://github.com/UncleThree0402/vasp_hpc_adjustment_acceleration_experiments/blob/master/image/8484gpuvshour_ra.png)
 
 ### Si2C2 -MultiNode -6 GPUs (GPU)
 | GPUs | No Adjust (s) | Adjust (s) | No Adjust (hr) | Adjust (hr) | 
@@ -108,5 +108,15 @@ Vasp :
 | 4    | ERR           | 1350.09    | ERR            | 0.38        |
 | 5    | ERR           | 1198.046   | ERR            | 0.33        |
 
-![8484ndvshour_re]()
-![8484ndvshour_ra]()
+![8484ndvshour_re](https://github.com/UncleThree0402/vasp_hpc_adjustment_acceleration_experiments/blob/master/image/8484ndvshour_re.png)
+![8484ndvshour_ra](https://github.com/UncleThree0402/vasp_hpc_adjustment_acceleration_experiments/blob/master/image/8484ndvshour_ra.png)
+
+### Summary
+* In single node and Si2C2 experiment, the fastest in adjusted model run faster than the fastest in non-adjusted model **2.46x**.
+* In single node and Si84C84 experiment, the fastest in adjusted model run faster than the fastest in non-adjusted model **2.17x**.
+* In mutil node and Si84C84 experiment, comparing two node, the fastest in adjusted model run faster than the fastest in non-adjusted model **3x**.
+
+
+## Adjustment
+In INCAR there is a parameter call **"KPAR"**, it divides k-grid into separate groups. While using mpi to run VASP multiple grid will increase efficient.
+> KPAR = k           (Divides k-grid into separate groups)
